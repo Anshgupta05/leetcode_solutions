@@ -1,9 +1,5 @@
-class Solution(object):
-    def lengthOfLongestSubstring(self, s):
-        """
-        :type s: str
-        :rtype: int
-        """
+class Solution:
+    def lengthOfLongestSubstring(self, s: str) -> int:
         char_map = {}
         max_length = 0
         left = 0
@@ -21,4 +17,5 @@ class Solution(object):
             max_length = max(max_length, right - left + 1)
             
         return max_length
+        
         
